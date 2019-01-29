@@ -11,6 +11,11 @@ export class HelloController {
     return "hello world!!!!!!!!!!"
   }
 
+  @get('/test')
+  meow(): object {
+    return {works: "fine"}
+  }
+
   @get('/cats')
   cats(): object {
     return {hello: "world"}
