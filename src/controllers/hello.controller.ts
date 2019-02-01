@@ -25,7 +25,7 @@ export class HelloController {
   cat(@param.path.number('id') id: number): object {
     return {
       id: id,
-      name: "Garfield the cat"
+      name: "Garfield"
     }
   }
 }
