@@ -134,4 +134,15 @@ export class TodoController {
   async deleteById(@param.path.number('id') id: number): Promise<void> {
     await this.todoRepository.deleteById(id);
   }
+
+  @get('/todos/testmethod',{
+    responses: {
+      '200': {
+        description: 'Test handmade todo method'
+      }
+    }
+  })
+  async testmethod():Promise<object>{
+    return Promise.resolve({hello: "world!!!"});
+  }
 }

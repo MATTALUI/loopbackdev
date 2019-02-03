@@ -31,4 +31,8 @@ export class Todo extends Entity {
   constructor(data?: Partial<Todo>) {
     super(data);
   }
+
+  testMethod():object{
+   return {hello: "world!"}
+  }
 }
